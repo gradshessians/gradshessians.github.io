@@ -408,7 +408,7 @@ h6 {
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(45, 103, 60, 0.8);
+  background-color:none;
 }
 
 #hero .carousel-container {
@@ -427,17 +427,22 @@ h6 {
 }
 
 #hero h2 {
-  color: #fff;
+  color: #ffffff; /* Change font color to white */
   margin-bottom: 20px;
   font-size: 48px;
   font-weight: 700;
+  text-shadow: 2px 2px 4px #000000; /* Add text shadow for better readability */
 }
 
 #hero p {
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
-  color: #fff;
+  color: #ffffff; /* Change font color to white */
+  /* background: rgba(0, 0, 0, 0.5); Add semi-transparent background */
+  /* padding: 10px; Add some padding around the text */
+  /* border-radius: 5px; Optional: rounded corners */
 }
+
 
 #hero .carousel-inner .carousel-item {
   transition-property: opacity;
