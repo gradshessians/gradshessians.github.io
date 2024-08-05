@@ -381,6 +381,185 @@ h6 {
   display: block;
 }
 
+
+
+/*--------------------------------------------------------------
+# Hero-Header
+--------------------------------------------------------------*/
+
+/* Ensure the background image covers the entire section */
+#hero-header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Ensure it covers the full viewport height */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure header and hero content are positioned correctly */
+#hero-header header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px; /* Adjust this height as needed */
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+#hero-header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#hero-header .logo a {
+  color: #5cb874;
+}
+
+#hero-header nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#hero-header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+#hero-header nav ul li {
+  position: relative;
+}
+
+#hero-header nav ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  color: #222222;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+#hero-header nav ul li a:hover,
+#hero-header nav ul li a.active {
+  color: #5cb874;
+}
+
+#hero-header .carousel-static {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 70px); /* Adjust for header height */
+}
+
+#hero-header .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+}
+
+#hero-header h2 {
+  color: #ffffff; /* Change font color to white */
+  margin-bottom: 20px;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px #000000; /* Add text shadow for better readability */
+}
+
+/* Ensure the rest of the styles remain the same for controls and indicators */
+#hero .carousel-control-next-icon,
+#hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 30px;
+  line-height: 0;
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.5);
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .carousel-control-next-icon:hover,
+#hero .carousel-control-prev-icon:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#hero .carousel-indicators li {
+  list-style-type: none;
+  cursor: pointer;
+  background: #fff;
+  overflow: hidden;
+  border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#hero .carousel-indicators li.active {
+  opacity: 1;
+  background: #5cb874;
+}
+
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  color: #fff;
+  animation-delay: 0.8s;
+  background: #5cb874;
+}
+
+#hero .btn-get-started:hover {
+  background: #6ec083;
+}
+
+@media (max-width: 992px) {
+  #hero-header .carousel-static {
+    height: calc(100vh - 70px); /* Adjust for header height */
+  }
+
+  #hero-header h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero-header .carousel-control-prev,
+  #hero-header .carousel-control-next {
+
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
